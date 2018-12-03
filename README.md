@@ -31,3 +31,29 @@ print 只可以输出一个字符串
 ---
 8 `strlen`返回字符串长度  
 `strpos`查找一个字符或一段指定的文本，返回位置，找不到则返回false
+
+---
+9 `array()`函数用于创建数组，有三种类型的数组：  
+(1) 数值数组  
+(2) 关联数组   带有指定的键的数组，每个键关联一个值  
+(3) 多维数组   包含一个或多个数组的数组  
+计算数组长度使用`count`, 遍历数组使用for循环  
+```
+    $cars=array("Volvo","BMW","Toyota");
+    $arrlength=count($cars);
+    
+    for($x=0;$x<$arrlength;$x++)
+    {
+        echo $cars[$x];
+        echo "<br>";
+    }
+```  
+`遍历关联数组`  
+```
+    $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+
+    foreach($age as $x=>$x_value) {
+        echo "key=" . $x . ", Value=" . $x_value;
+        echo "<br>"
+    }
+```
